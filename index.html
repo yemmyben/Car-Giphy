@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Car Search</title>
+    <style type="text/css">
+        button,
+        div,
+        form,
+        input {
+          margin: 10px;
+        }
+        @font-face {
+          src: url(fonts/Katrine.ttf);
+          /* src: url(fonts/Saturdate.ttf);
+          src: url(fonts/Londoner.ttf); */
+          font-family: Kat;
+          /*font-family: Sat;*/
+        }
+        @font-face {
+          src: url(fonts/SaturdateSerif.ttf);
+          font-family: Sat;
+        }
+        @font-face {
+          src: url(fonts/Londoner.ttf);
+          font-family: Lon;
+        }
+        #buttons-view {
+          font-family: Kat;
+        }
+        input, form {
+          float: right;
+        }
+        #heading {
+          width: 1140px;
+          margin: auto;
+          position: relative;
+          padding: 10 0 10 0px;
+          
+        }
+        .container {
+          background: lightcoral;
+          padding: 0 20px;
+        }
+        h1 {
+          font-family: Sat;
+          margin: 10px auto;
+        }
+        label {
+          padding-top: 10px;
+          font-family: Lon;
+        }
+        #car-form {
+          position: relative;
+        }
+        #add-car {
+          font-family: Lon;
+        }
+      </style>
+</head>
+<body>
+    
+        <div id="heading"><h1 class="heading">Car Search</h1></div>
+    
+         <!-- Rendered Buttons will get Dumped Here  -->
+         <div class="container">
+        <div id="buttons-view"></div>
+    
+        <form id="car-form">
+          <label for="car-input">Add a Car Type</label>
+          <input type="text" id="car-input"><br>
+    
+          <!-- Button triggers new car to be added -->
+          <input id="add-car" type="submit" value="Add Your Car Type">
+        </form>
+
+        <!-- Cars will Get Dumped Here -->
+      <div id="cars-view"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javaScript" src="javascript/app.js"></script>
+  </div>
+</body>
+</html>
